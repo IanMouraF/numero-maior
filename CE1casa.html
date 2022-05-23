@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<script>
+    let numero1 = parseFloat(prompt('Digite um número'))
+    let numero2 = parseFloat(prompt('Digite um número'))
+    let numero3 = parseFloat(prompt('Digite um número'))
+    let aux1 = numero1
+    let aux2 = numero2
+    let aux3 = numero3
+
+    if(numero3>numero2){
+        numero2 = numero3
+        numero3 = aux2
+    }
+    if(numero2>numero1){
+        numero1 = numero2
+        numero2 = aux1
+        
+    }
+    if(numero3>numero2){
+        let aux22 = numero2
+        numero2 = numero3
+        numero3 = aux22
+    }
+
+    document.write('Ordem decrescente: '+numero1+' '+numero2+' '+numero3+'<br>')
+    document.write('Ordem crescente: '+numero3+' '+numero2+' '+numero1+'<br>')
+
+</script>
